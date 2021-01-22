@@ -12,5 +12,5 @@ if (int1 % 5 == 0) & (int1 % 3 != 0):
     print("Buzz")
 if ((int1 % 3== 0) & (int1 % 5 == 0)):
     print("FizzBuzz")
-if ((int1 % 3 != 0) & (int1 %5 != 0)):
+if ((int1 % 3 != 0) & (int1 % 5 != 0)):
     print(int1)
