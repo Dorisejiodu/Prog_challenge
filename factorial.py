@@ -1,0 +1,8 @@
+def factorial(n):
+    """Return the factorial of positive integer n."""
+    if n == 1:
+        return 1
+    else:
+        return n * factorial (n - 1)
+n = factorial(4)
+print(n)

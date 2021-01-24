@@ -4,13 +4,25 @@
 # If it is divisible by both 3 and 5, it should return “FizzBuzz”.
 # Otherwise, it should return the same number.
 
+def fizz_buzz(int1):
+    int1 = int(input("Enter a number "))
+    if ((int1 % 3 == 0) & (int1 % 5 != 0)):
+        return "Fizz"
+    if (int1 % 5 == 0) & (int1 % 3 != 0):
+        return "Buzz"
+    if ((int1 % 3== 0) & (int1 % 5 == 0)):
+        return "FizzBuzz"
+    if ((int1 % 3 != 0) & (int1 % 5 != 0)):
+        return int1
 
-int1 = int(input("Enter a number "))
-if ((int1 % 3 == 0) & (int1 % 5 != 0)):
-    print("Fizz")
-if (int1 % 5 == 0) & (int1 % 3 != 0):
-    print("Buzz")
-if ((int1 % 3== 0) & (int1 % 5 == 0)):
-    print("FizzBuzz")
-if ((int1 % 3 != 0) & (int1 % 5 != 0)):
-    print(int1)
+int1 = fizz_buzz(15)
+print(int1)
+
+int1 = fizz_buzz(6)
+print(int1)
+
+int1 = fizz_buzz(10)
+print(int1)
+
+int1 = fizz_buzz(22)
+print(int1)

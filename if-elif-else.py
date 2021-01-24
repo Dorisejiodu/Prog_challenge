@@ -5,5 +5,5 @@ def abs_val(num):
         print(0)
     else:
         print(num)
-value = abs_val(-4)
-print(value)
+#value = abs_val(-4)
+#print(value)
