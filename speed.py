@@ -5,12 +5,16 @@
 # it should print: “Points: 2”.
 # If the driver gets more than 12 points, the function should print: “License suspended"
 
-speed = int(input("Enter your speed  "))
-if speed < 70:
-    print("OK")
-else:
-    point_formular = (speed - 70)//5
-    if point_formular <= 12:
-        print ("point:", point_formular)
+def driver_speed(speed):
+    speed = int(input("Enter your speed  "))
+    if speed < 70:
+        return "OK"
     else:
-        print ("Licence suspended")
+        point_formular = (speed - 70)//5
+        if point_formular <= 12:
+            return "point:",  point_formular
+        else:
+            return "Licence suspended"
+
+speed = driver_speed(80)
+print(speed)
