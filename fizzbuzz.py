@@ -5,6 +5,7 @@
 # Otherwise, it should return the same number.
 
 
+
 int1 = int(input("Enter a number "))
 if ((int1 % 3 == 0) & (int1 % 5 != 0)):
     print("Fizz")

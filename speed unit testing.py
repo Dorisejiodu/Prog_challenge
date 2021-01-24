@@ -10,5 +10,6 @@ def driver_speed(speed):
             print ("Licence suspended")
 
 
+
 x = driver_speed(90)
 print(x)
